@@ -4,7 +4,7 @@
 *{margin: 0;padding: 0 ;}
 
 .topheader {
-    background: #222222;
+    background: #090630;
     height: 40px;
     color: white;
     line-height: 40px;
@@ -195,7 +195,7 @@ a.readmore{
     font-family: 'Oswald', sans-serif;}
 /* end khoi 3dichvu */
 .khoimenu{
-    background: url(./gaidep.jpg);
+    background: rgb(114, 104, 104);
     background-size: cover;
     color: white;
     height: 550px;
