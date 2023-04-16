@@ -4,15 +4,26 @@
 *{margin: 0;padding: 0 ;}
 
 .topheader {
-    background: #090630;
+    background-image: -webkit-linear-gradient(45deg,#dfb760,#853fa1 ,#dfb760);
     height: 40px;
     color: white;
     line-height: 40px;
+    transform: translateY(-40px);
+    transition: 1s;
+    animation: top 1.2s forwards;
 }
+@keyframes top {
+    0%{
+        transform: translateY(-40px)}
+        100%{transform: translateY(0px);
+
+        }
+}
+
 .mangxh a{
     color: #dddddd;
-    font-size: 12px;
-    padding: 0 13px;
+    font-size: 14px;
+    padding: 0 14px;
 }
 .mangxh a:nth-child(1){
     padding-left: 0;
@@ -23,7 +34,7 @@
     margin-left: 17px;
     padding-left: 25px;
     font-family: 'Roboto Slab', serif;
-    font-size: 13px;
+    font-size: 16px;
     color: #ddd;
 }
 .datban.openingtop.float-xs-right{
@@ -60,7 +71,7 @@
     display: block;
     border-bottom: 1px solid black;
 }
-.datbanmenu a.nav-link.btn.btn-warning{
+.datbanmenu a.nav-link.btn.btn-warning, .datban2{
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -174,7 +185,7 @@ a.nutslide.btn.btn-warning{
 .badichvu h3 a{
    font-family: 'Oswald', sans-serif;;
     font-size: 20px;
-    color: #333;
+    color: #ce910f;
     display: block;
     padding-top: 25px;
     text-align: center;
@@ -188,18 +199,18 @@ a.nutslide.btn.btn-warning{
     text-align: center;
 }
 a.readmore{
-    color: #726d6d;
+    color: #feb518;
     text-align: center;
     display: block;
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Oswald', sans-serif;}
 /* end khoi 3dichvu */
 .khoimenu{
-    background: rgb(114, 104, 104);
+    background: url(ad1.jpg);
     background-size: cover;
     color: white;
     height: 550px;
-    padding-left: 400px;
+    padding-left: 200px;
     text-align: center;
 }
 .tieudekhoimenu.text-xs-center{
@@ -208,7 +219,7 @@ a.readmore{
     height: 550px;
 }
 .tieudekhoimenu{
-    padding-top: 200px;
+    padding-top: 0px;
 }
 span.tieudephu{
     font-weight: 700;
@@ -227,24 +238,25 @@ h3.tieudechinh.fontroboto{
 .thucdonct .tieudect{
     height: 40px;
     line-height: 40px;
-    background: rgb(72, 50, 92);
+    background-image: -webkit-linear-gradient(left,#9d4ab6,rgb(210, 212, 71),#9416b4);
     margin-bottom: 120px;
+    margin-top: -40px;
 }
 .thucdonct .noidungct{
-    height: 400px;
+    height: auto;
     position: relative;
     
 }
-.thucdonct .noidungct .noidung{
+.thucdonct .noidungct .noidung {
     height: 400px;
     border: 1px solid gold;
     position: absolute;
     top: 0px;
-    opacity: 0;
-    visibility: hidden;
 }
+
 .motmon{
     height: 120px;
+    float: left;
 }
 .anhmon{
     position: relative;
@@ -276,10 +288,401 @@ b.ten{
 .tenmon .tren span{
     display: inline-block;
     background: white;
-    transform: translateY(2px);
+    transform: translateY(3px);
 }
 .duoi{
     color: #777;
     font-size: 13px;
     padding-top: 10px;
+}
+.tieudect a{
+    color: white;
+    font-size: 16px;
+    padding: 0px 18px;
+   
+
+}
+.tieudect a:focus{
+    color: orange;
+    text-decoration: none;
+}
+
+/* css slidemonan */
+.sanpham { 
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+img.anhspslide {width: 100%; }
+.slidemonan {
+    margin-top: 100px;
+    background: rgb(85, 83, 83);
+    background-size: cover;
+    color: rgb(201, 200, 200);
+    margin-bottom: 20px;
+    padding-bottom: 68px;
+}
+.gia.float-xs-right{
+    color: #feb518;
+}
+.slidemonan h4 {
+    font-family: roboto slab;
+    font-size: 24px;
+    padding: 23px 0px;
+    margin-left: 0;
+    color: #fe189e;
+}
+.slidemonan a.carousel-control-next, .slidemonan a.carousel-control-prev{
+   position: absolute; 
+   background: rgba(97, 93, 93, 0.363);
+   width: 34px;
+   height: 34px;
+   top: -57px;
+   color: white;
+   line-height: 34px;
+   text-align: center;
+}
+.slidemonan a.carousel-control-prev{
+    right: 36px;
+    left: auto;
+}
+.slidemonan a.carousel-control-next:hover, 
+.slidemonan a.carousel-control-prev:hover{
+    background: #feb518a8;
+}
+.tensp .ten, .tensp .gia{
+    font-family: oswald;
+    font-size: 17px;
+    padding-top: 10px;
+}
+.tencongthuc{
+    font-family: roboto slab;
+    font-size: 13px;
+    color: #aaa;
+}
+.goithieudaubep img{
+    padding-top: 107px;
+    min-height: 576px;
+    width: 100%;
+}
+.thongtin{
+    padding-top: 100px;
+}
+.thongtin h2{
+    font-size: 30px;
+    color: #333;
+}
+.thongtin span.fontdancing{
+    color: #feb518;
+    font-size: 31px;
+    padding-bottom: 25px;
+    display: block;
+}
+.thongtin p{
+    line-height: 26px;
+    font-family: roboto slab;
+    color: #777;
+    font-size: 15px;
+}
+.daubepcontact .icondb{
+    background: black;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    text-align: center;
+    line-height: 36px;
+    color: white;
+    margin-right: 4px;
+    border-radius: 3px;
+    transition: 0.4s;
+
+}
+.daubepcontact .icondb:hover{
+    background: #feb518;
+    color: black;
+}
+.sloganhome{
+    padding: 230px 0px;
+    background: url(backg.jpg);
+    color: white;
+    margin-top: 32px;
+}
+.sloganhome h3.fontdancing{
+    font-size: 36px;
+    color: #feb518;
+    line-height: 50px;
+}
+.sloganhome span{
+font-size: 30px;
+color: white;
+}
+.khoidatban .text-sm-center{
+    padding-top: 100px;
+}
+.thongtindatban .fontroboto h2{
+    font-size: 26px;
+    color: #333;
+}
+.thongtindatban .fontroboto p{
+    font-size: 15px;
+    line-height: 26px;
+    color: #777;
+    padding-top: 37px;
+}
+span.vang{
+    color: #fec458;
+}
+.dtdb.fontoswarld{
+    font-weight: bold;
+    font-size: 25px;
+}
+.thongtindatban.fontroboto{
+    border-bottom: 1px solid #681616;
+    padding-bottom: 61px;
+    margin-bottom: 53px;
+}
+.formdatban h2.text-sm-center.fontroboto{
+    font-size: 26px;
+    color: #333;
+    padding-bottom: 60px;
+}
+a.btn.btn-danger.datban2{
+    font-weight: bold;
+    height: 60px;
+    width: 160px;
+    font-family: roboto slab;
+    text-transform: uppercase;
+    margin-top: 40px;
+    line-height: 50px;
+
+}
+.quote{
+    font-family: dancing;
+    line-height: 36px;
+    font-size: 19px;
+    color: #ece6d9;
+}
+.quote::after{
+    content: ' " ';
+}
+.quote::before{
+    content: ' " ';
+}
+.tennguoi::before{
+    content: ' - ';
+}
+.phanhoinguoidung{
+    margin-top: 120px;
+    background-image: -webkit-linear-gradient(-45deg, rgb(12, 12, 12),rgb(215, 178, 230),black);
+    color: white;
+    padding: 92px 0px;
+}
+.phanhoinguoidung i.fa.fa-quote-right, .phanhoinguoidung i.fa.fa-shopping-bag, .phanhoinguoidung i.fa.fa-shopping-cart{
+    font-size: 36px;
+    margin-bottom: 66px;
+}
+b.fontdancing.tennguoi{
+    font-size: 36px;
+    color: #feb518;
+    margin-top: 23px;
+    display: inline-block;
+}
+.phanhoinguoidung ol.carousel-indicators{
+    bottom: -59px;
+}
+.tintuchome{
+    padding: 120px 0px;
+}
+.tdtintuchome .fontdancing{
+    font-size: 40px;
+    color: #feb518;
+}
+.tdhome h2{
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 55px;
+}
+.tintuchome img{
+    width: 100%;
+}
+a.tieudetin1.fontoswarld{
+    color: #2c2c2c;
+    font-size: 20px;
+    padding: 26px 0 12px 0;
+    display: block;
+}
+.ngaythang1{
+    line-height: 24px;
+    font-size: 17px;
+    display: inline-block;
+    font-family: roboto slab;
+    color: #3e3e3e;
+    padding-bottom: 19px;
+}
+.tintuchome p.fontroboto {
+    color: #665d5d;
+    line-height: 24px;
+    font-size: 15px;
+}
+.docthem{
+    padding-top: 6px;
+    color: gray;
+    height: 40px;
+    font-size: 14px;
+    margin-top: 27px;
+    padding-top: 17px;
+}
+a.rm.fontroboto {
+    color: #feb518;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.footertop{
+    background: rgb(51, 51, 51);
+    color: rgb(153, 148, 148);
+    line-height: 24px;
+    font-size: 14px;
+    padding-top: 113px;
+    padding-bottom: 100px;
+}
+.footerbottom{
+    line-height: 91px;
+    height: 91px;
+    color: #999;
+    font-size: 13px;
+    background-color: #2c2c2c;
+    
+}
+.cotf1 p{
+    padding-top: 17px;
+}
+.cotf1 i.fa{
+    padding-right: 20px;
+    float: left;
+    padding-top: 6px;
+    color: #ababab;
+    font-size: 13px;
+}
+.motdong {
+    overflow: hidden;
+    padding: 3px 0px;
+}
+.cotf1 i.fa.fa-paper-plane-o{
+    padding-bottom: 23px;
+}
+h2.tdft {
+    color: #ccc;
+    font-size: 14px;
+    font-family: roboto slab;
+    position: relative;
+}
+.cotf2 ul, .cotf3 ul{
+    list-style: none;
+    margin: 0px;
+   
+}
+.cotf2 ul li a, .cotf3 ul li a{
+    color: #8c8d94;
+    font-size: 14px;
+    font-family: roboto slab;
+    line-height: 28px;
+    transition: 0,4s;
+}
+.cotf2 ul li a:hover, .cotf3 ul li a:hover{
+    text-decoration: none;
+    color: white;
+}
+.cotf3{
+    padding-left: 90px;
+}
+.openning1{
+    border-bottom: 1px dotted rgb(121, 121, 121);
+    height: 28px;
+    margin-bottom: 13px;
+    margin-top: -9px;
+    color: rgb(101, 101, 224);
+}
+.openning1 .phai.float-sm-right{
+    background: rgb(65, 65, 65);
+    transform: translateY(9px);
+    margin-left: 7px;
+}
+.openning1 .trai{
+    background: rgb(66, 65, 65);
+    float: left;
+    transform: translateY(9px);
+    padding-right: 10px;
+    
+}
+.badichvu .trai{
+    transition: 1s;
+    left: -800px;
+    animation: anh 1s forwards;
+    animation-delay: 1.4s;
+}
+@keyframes anh{
+    0%{
+        left: -800px;
+    }
+    100%{
+        left:0px;
+    }
+}
+.slide{
+    transform: translateY(500px);
+    transition: 1s;
+    opacity: 1;
+    animation: sli 1s forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+@keyframes sli{
+    0%{transform: translateY(500px)}
+    50%{transform: translateY(50px); opacity:0.2}
+    100%{transform: translateY(0px); opacity:1}
+    
+}
+.badichvu .phai{
+    transition: 1s;
+    left: 800px;
+    animation: anh1 1s forwards;
+    animation-delay: 1.4s;
+}
+@keyframes anh1{
+    0%{
+        left: 800px;
+    }
+    100%{
+        left:0px;
+    }
+}
+.badichvu .giua{
+    transition: 1s;
+    opacity: 0;
+    animation: anh2 1s forwards;
+    animation-delay: 1.4s;
+}
+@keyframes anh2{
+    0%{
+        opacity: 0;
+    }
+    50%{opacity: 0.2;}
+    100%{
+       opacity: 1;
+    }
+}
+.logovamenu{
+    transition: 2s;
+    animation: logo 3.5s forwards;
+    opacity: 0;
+}
+@keyframes logo{
+    0%{opacity: 0;}
+    65%{opacity:0.2}
+    85%{opacity:0.6}
+    100%{opacity:1}
 }
